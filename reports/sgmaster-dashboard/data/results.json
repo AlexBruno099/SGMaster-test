@@ -1,0 +1,46 @@
+[
+    {
+        "id": "vendas_100647",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "FALHA",
+        "data_execucao": "04/11/2025 10:06",
+        "duracao": 7.8,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "❌ Erro durante execução: Message: element click intercepted: Element <p class=\"text-white tw-uppercase\">...</p> is not clickable at point (1111, 104). Other element would receive the click: <div class=\"tw-flex tw-flex-row max-sm:tw-flex-wrap tw-items-center tw-gap-2\">...</div>\n  (Session info: chrome=141.0.7390.125); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception\nStacktrace:\n\tGetHandleVerifier [0x0xb7fe43+66515]\n\tGetHandleVerifier [0x0xb7fe84+66580]\n\t(No symbol) [0x0x96dc48]\n\t(No symbol) [0x0x9bec10]\n\t(No symbol) [0x0x9bcf73]\n\t(No symbol) [0x0x9baa17]\n\t(No symbol) [0x0x9b9c8d]\n\t(No symbol) [0x0x9ae115]\n\t(No symbol) [0x0x9db1cc]\n\t(No symbol) [0x0x9adb74]\n\t(No symbol) [0x0x9db384]\n\t(No symbol) [0x0x9fcba7]\n\t(No symbol) [0x0x9dafc6]\n\t(No symbol) [0x0x9ac2ca]\n\t(No symbol) [0x0x9ad154]\n\tGetHandleVerifier [0x0xdd7353+2521315]\n\tGetHandleVerifier [0x0xdd22d3+2500707]\n\tGetHandleVerifier [0x0xba7c94+229924]\n\tGetHandleVerifier [0x0xb981f8+165768]\n\tGetHandleVerifier [0x0xb9ecad+193085]\n\tGetHandleVerifier [0x0xb88158+100072]\n\tGetHandleVerifier [0x0xb882f0+100480]\n\tGetHandleVerifier [0x0xb725aa+11066]\n\tBaseThreadInitThunk [0x0x77ac5d49+25]\n\tRtlInitializeExceptionChain [0x0x77d1d6db+107]\n\tRtlGetAppContainerNamedObjectPath [0x0x77d1d661+561]\n"
+        ],
+        "erro": "Message: element click intercepted: Element <p class=\"text-white tw-uppercase\">...</p> is not clickable at point (1111, 104). Other element would receive the click: <div class=\"tw-flex tw-flex-row max-sm:tw-flex-wrap tw-items-center tw-gap-2\">...</div>\n  (Session info: chrome=141.0.7390.125); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception\nStacktrace:\n\tGetHandleVerifier [0x0xb7fe43+66515]\n\tGetHandleVerifier [0x0xb7fe84+66580]\n\t(No symbol) [0x0x96dc48]\n\t(No symbol) [0x0x9bec10]\n\t(No symbol) [0x0x9bcf73]\n\t(No symbol) [0x0x9baa17]\n\t(No symbol) [0x0x9b9c8d]\n\t(No symbol) [0x0x9ae115]\n\t(No symbol) [0x0x9db1cc]\n\t(No symbol) [0x0x9adb74]\n\t(No symbol) [0x0x9db384]\n\t(No symbol) [0x0x9fcba7]\n\t(No symbol) [0x0x9dafc6]\n\t(No symbol) [0x0x9ac2ca]\n\t(No symbol) [0x0x9ad154]\n\tGetHandleVerifier [0x0xdd7353+2521315]\n\tGetHandleVerifier [0x0xdd22d3+2500707]\n\tGetHandleVerifier [0x0xba7c94+229924]\n\tGetHandleVerifier [0x0xb981f8+165768]\n\tGetHandleVerifier [0x0xb9ecad+193085]\n\tGetHandleVerifier [0x0xb88158+100072]\n\tGetHandleVerifier [0x0xb882f0+100480]\n\tGetHandleVerifier [0x0xb725aa+11066]\n\tBaseThreadInitThunk [0x0x77ac5d49+25]\n\tRtlInitializeExceptionChain [0x0x77d1d6db+107]\n\tRtlGetAppContainerNamedObjectPath [0x0x77d1d661+561]\n",
+        "screenshot": null
+    },
+    {
+        "id": "vendas_102610",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "SUCESSO",
+        "data_execucao": "04/11/2025 10:26",
+        "duracao": 13.99,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "✅ Clicou em 'Cadastrar venda'",
+            "✅ Código '6611' inserido com sucesso",
+            "✅ Código '4229' inserido com sucesso",
+            "✅ Código '5106' inserido com sucesso",
+            "✅ Código '8842' inserido com sucesso",
+            "✅ Código '2361' inserido com sucesso",
+            "✅ Botão 'Finalizar' clicado com sucesso",
+            "📸 Screenshot salva em reports/screenshots/fluxo_vendas_2025-11-04_10-26.png",
+            "🔄 Tela atualizada (atalho F5 simulado)"
+        ],
+        "erro": null,
+        "screenshot": "reports/screenshots/fluxo_vendas_2025-11-04_10-26.png"
+    }
+]

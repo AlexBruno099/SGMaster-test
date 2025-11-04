@@ -1,0 +1,28 @@
+[
+    {
+        "id": "vendas_100415",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "SUCESSO",
+        "data_execucao": "04/11/2025 10:04",
+        "duracao": 14.67,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "✅ Clicou em 'Cadastrar venda'",
+            "✅ Código '5289' inserido com sucesso",
+            "✅ Código '9246' inserido com sucesso",
+            "✅ Código '3723' inserido com sucesso",
+            "✅ Código '9338' inserido com sucesso",
+            "✅ Código '4849' inserido com sucesso",
+            "✅ Botão 'Finalizar' clicado com sucesso",
+            "📸 Screenshot salva em reports/screenshots/fluxo_vendas_2025-11-04_10-04.png",
+            "🔄 Tela atualizada (atalho F5 simulado)"
+        ],
+        "erro": null,
+        "screenshot": "reports/screenshots/fluxo_vendas_2025-11-04_10-04.png"
+    }
+]
