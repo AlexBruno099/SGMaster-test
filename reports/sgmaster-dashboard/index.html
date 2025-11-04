@@ -83,7 +83,7 @@
 
     async function carregarDados() {
       try {
-        const res = await fetch('./data/results.json?' + Date.now());
+        const res = await fetch('../../data/results.json?' + Date.now());
         if (!res.ok) throw new Error("Não foi possível acessar results.json");
         const data = await res.json();
         window.reportData = data;
