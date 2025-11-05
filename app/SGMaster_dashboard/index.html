@@ -83,7 +83,7 @@
 
     async function carregarDados() {
       try {
-        const res = await fetch('../../data/results.json?' + Date.now());
+        const res = await fetch('../data/results.json?' + Date.now());
         if (!res.ok) throw new Error("Não foi possível acessar results.json");
         const data = await res.json();
         window.reportData = data;
@@ -144,7 +144,7 @@
         console.error("❌ Erro ao carregar dados:", err);
         document.getElementById('details').innerHTML = `
           <div class="ia-box text-red-500">Erro ao carregar o arquivo de resultados. 
-          Verifique se o caminho <b>Reports/sgmaster-dashboard/data/results.json</b> existe e contém dados válidos.</div>
+          Verifique se o caminho <b>data/results.json</b> existe e contém dados válidos.</div>
         `;
       }
     }

@@ -5,8 +5,8 @@ from datetime import datetime
 
 def atualizar_dashboard_html(dados_teste):
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    JSON_PATH = os.path.join(BASE_DIR, "data", "results.json")
-    HTML_PATH = os.path.join(BASE_DIR, "reports", "sgmaster-dashboard", "index.html")
+    JSON_PATH = os.path.join(BASE_DIR, "app", "data" , "results.json")
+    HTML_PATH = os.path.join(BASE_DIR, "app", "SGMaster_dashboard", "index.html")
 
     os.makedirs(os.path.join(BASE_DIR, "data"), exist_ok=True)
 
@@ -28,8 +28,7 @@ def atualizar_dashboard_html(dados_teste):
     print(f"✅ JSON atualizado com {len(historico)} registros → {JSON_PATH}")
 
     if os.path.exists(HTML_PATH):
-        full_path = os.path.abspath(HTML_PATH)
-        webbrowser.open(f"file:///{full_path}")
-        print(f"📊 Dashboard aberto: {full_path}")
+        print("📊 Abrindo dashboard via Live Server...")
+        webbrowser.open("http://127.0.0.1:5500/app/SGMaster_dashboard/index.html")
     else:
         print(f"⚠️ Dashboard não encontrado em {HTML_PATH}")

@@ -1,0 +1,223 @@
+[
+    {
+        "id": "test_fluxo_vendas_1762350961",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "FALHA",
+        "data_execucao": "05/11/2025 10:56",
+        "duracao": 14.94,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\marcelocassol\\\\Documents\\\\SGBR\\\\SGMater_Pytest\\\\V1\\\\SGMaster-test\\\\data\\\\reports/sgmater_dashboard/data/results.json'",
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762351132",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "FALHA",
+        "data_execucao": "05/11/2025 10:58",
+        "duracao": 14.55,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\marcelocassol\\\\Documents\\\\SGBR\\\\SGMater_Pytest\\\\V1\\\\SGMaster-test\\\\reports/sgmater_dashboard/data\\\\results.json'",
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762351230",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 11:00",
+        "duracao": 14.26,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762351313",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 11:01",
+        "duracao": 14.54,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762351369",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 11:02",
+        "duracao": 14.29,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762353757",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "FALHA",
+        "data_execucao": "05/11/2025 11:42",
+        "duracao": 14.08,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\marcelocassol\\\\Documents\\\\SGBR\\\\SGMater_Pytest\\\\V1\\\\SGMaster-test\\\\tests\\\\reports\\\\sgmaster-dashboard\\\\data\\\\results.json'",
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762354114",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "FALHA",
+        "data_execucao": "05/11/2025 11:48",
+        "duracao": 14.59,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": "name 'atualizar_dashboard_html' is not defined",
+        "screenshot": null
+    },
+    {
+        "id": "vendas_1762354226",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 11:50",
+        "duracao": 14.59,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "✅ Clicou em 'Cadastrar venda'",
+            "✅ Código '7803' inserido com sucesso",
+            "✅ Código '4041' inserido com sucesso",
+            "✅ Código '6865' inserido com sucesso",
+            "✅ Código '4980' inserido com sucesso",
+            "✅ Código '9428' inserido com sucesso",
+            "✅ Botão 'Finalizar' clicado com sucesso",
+            "📸 Screenshot salva em screenshots\\fluxo_vendas_2025-11-05_11-50.png",
+            "🔄 Tela atualizada"
+        ],
+        "erro": null,
+        "screenshot": "screenshots/fluxo_vendas_2025-11-05_11-50.png"
+    },
+    {
+        "id": "test_fluxo_vendas_1762354226",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 11:50",
+        "duracao": 14.84,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "vendas_1762356025",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 12:20",
+        "duracao": 14.54,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "✅ Clicou em 'Cadastrar venda'",
+            "✅ Código '9650' inserido com sucesso",
+            "✅ Código '2468' inserido com sucesso",
+            "✅ Código '8698' inserido com sucesso",
+            "✅ Código '3021' inserido com sucesso",
+            "✅ Código '3972' inserido com sucesso",
+            "✅ Botão 'Finalizar' clicado com sucesso",
+            "📸 Screenshot salva em screenshots\\fluxo_vendas_2025-11-05_12-20.png",
+            "🔄 Tela atualizada"
+        ],
+        "erro": null,
+        "screenshot": "screenshots/fluxo_vendas_2025-11-05_12-20.png"
+    },
+    {
+        "id": "test_fluxo_vendas_1762356025",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 12:20",
+        "duracao": 14.76,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "vendas_1762356237",
+        "nome": "Fluxo de Vendas",
+        "icone": "🧾",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 12:23",
+        "duracao": 14.95,
+        "etapas": [
+            "✅ Login realizado com sucesso",
+            "✅ Empresa acessada com sucesso",
+            "✅ Modal fechado (se existia)",
+            "✅ Menu 'Vendas' aberto",
+            "✅ Tela de PDV acessada",
+            "✅ Clicou em 'Cadastrar venda'",
+            "✅ Código '3285' inserido com sucesso",
+            "✅ Código '1002' inserido com sucesso",
+            "✅ Código '7645' inserido com sucesso",
+            "✅ Código '2330' inserido com sucesso",
+            "✅ Código '8557' inserido com sucesso",
+            "✅ Botão 'Finalizar' clicado com sucesso",
+            "📸 Screenshot salva em screenshots\\fluxo_vendas_2025-11-05_12-23.png",
+            "🔄 Tela atualizada"
+        ],
+        "erro": null,
+        "screenshot": "screenshots/fluxo_vendas_2025-11-05_12-23.png"
+    },
+    {
+        "id": "test_fluxo_vendas_1762356237",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 12:23",
+        "duracao": 15.08,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762356485",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 12:28",
+        "duracao": 14.3,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    }
+]

@@ -13,6 +13,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
+from utils.dashboard import atualizar_dashboard_html
+from utils.login import login
 
 # ==============================================================
 # 🔧 FIXTURE DO DRIVER
@@ -24,69 +26,10 @@ def driver():
     yield driver
     driver.quit()
 
-
-# ==============================================================
-# 🧾 ATUALIZA O DASHBOARD (index.html)
-# ==============================================================
-def atualizar_dashboard_html(dados_teste):
-    """
-    Atualiza o dashboard moderno (index.html) dentro de reports/sgmaster-dashboard.
-    Também mantém histórico em data/results.json.
-    """
-
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # /reports/sgmaster-dashboard
-    JSON_PATH = os.path.join(BASE_DIR, "data", "results.json")
-    HTML_PATH = os.path.join(BASE_DIR, "index.html")
-
-    os.makedirs(os.path.join(BASE_DIR, "data"), exist_ok=True)
-
-    # === Lê histórico existente
-    historico = []
-    if os.path.exists(JSON_PATH):
-        try:
-            with open(JSON_PATH, "r", encoding="utf-8") as f:
-                conteudo = f.read().strip()
-                if conteudo:
-                    historico = json.loads(conteudo)
-        except Exception:
-            historico = []
-
-    # === Adiciona novo teste
-    historico.append(dados_teste)
-
-    with open(JSON_PATH, "w", encoding="utf-8") as f:
-        json.dump(historico, f, indent=4, ensure_ascii=False)
-
-    print(f"✅ JSON atualizado com {len(historico)} registros → {JSON_PATH}")
-
-    # === Abre o dashboard automaticamente
-    if os.path.exists(HTML_PATH):
-        full_path = os.path.abspath(HTML_PATH)
-        webbrowser.open(f"file:///{full_path}")
-        print(f"📊 Dashboard aberto: {full_path}")
-    else:
-        print(f"⚠️ Dashboard não encontrado em {HTML_PATH}")
-
-
 # ==============================================================
 # 🧠 FUNÇÕES DO FLUXO DE TESTE
 # ==============================================================
-def login(driver):
-    driver.get("https://hom.sgmaster.com.br/empresas")
-
-    WebDriverWait(driver, 10).until(
-        EC.visibility_of_element_located((By.ID, "username"))
-    ).send_keys("devalexbruno@gmail.com")
-
-    WebDriverWait(driver, 10).until(
-        EC.visibility_of_element_located((By.ID, "password"))
-    ).send_keys("tanna2810")
-
-    WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, "kc-login"))
-    ).click()
-
-
+    
 def acessar_empresa_direto(driver, url_empresa):
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
     driver.get(url_empresa)
@@ -99,7 +42,6 @@ def fechar_modal(driver):
         close_icon.click()
     except TimeoutException:
         pass
-
 
 def abrir_menu_vendas(driver):
     menu = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//p[contains(text(),'Vendas')]")))
@@ -137,8 +79,8 @@ def inserir_codigos_e_finalizar(driver, quantidade=5):
         btn_finalizar.click()
         etapas_local.append("✅ Botão 'Finalizar' clicado com sucesso")
 
-        os.makedirs(os.path.join("reports", "screenshots"), exist_ok=True)
-        screenshot_final = os.path.join("reports", "screenshots", f"fluxo_vendas_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.png")
+        os.makedirs(os.path.join("screenshots"), exist_ok=True)
+        screenshot_final = os.path.join("screenshots", f"fluxo_vendas_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.png")
         driver.save_screenshot(screenshot_final)
         etapas_local.append(f"📸 Screenshot salva em {screenshot_final}")
 
@@ -204,6 +146,3 @@ def test_fluxo_vendas(driver):
         "erro": erro,
         "screenshot": screenshot.replace("\\", "/") if screenshot else None
     }
-
-    atualizar_dashboard_html(dados_teste)
-    assert status == "SUCESSO", f"Teste falhou: {erro}"

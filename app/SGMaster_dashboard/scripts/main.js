@@ -62,7 +62,7 @@ function showDetails(test) {
     <h4>Etapas:</h4>
     <pre>${test.etapas.join("\n")}</pre>
     ${test.erro ? `<p><b>Erro:</b> ${test.erro}</p>` : ""}
-    ${test.screenshot ? `<img src="../reports/${test.screenshot}" style="max-width:100%;border-radius:10px;">` : ""}
+    ${test.screenshot ? `<img src="../../screenshots/${test.screenshot}" style="max-width:100%;border-radius:10px;">` : ""}
   `;
 }
 
