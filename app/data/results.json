@@ -219,5 +219,122 @@
         ],
         "erro": null,
         "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762358567",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 13:02",
+        "duracao": 15.15,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762358678",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 13:04",
+        "duracao": 14.75,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762358781",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "05/11/2025 13:06",
+        "duracao": 15.44,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762951115",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 09:38",
+        "duracao": 15.63,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762951160",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 09:39",
+        "duracao": 15.61,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762956539",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 11:08",
+        "duracao": 16.85,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762958626",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 11:43",
+        "duracao": 66.8,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762958861",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 11:47",
+        "duracao": 17.1,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
+    },
+    {
+        "id": "test_fluxo_vendas_1762958987",
+        "nome": "Test Fluxo Vendas",
+        "icone": "🧪",
+        "status": "SUCESSO",
+        "data_execucao": "12/11/2025 11:49",
+        "duracao": 15.14,
+        "etapas": [
+            "Teste 'test_fluxo_vendas' executado automaticamente"
+        ],
+        "erro": null,
+        "screenshot": null
     }
 ]

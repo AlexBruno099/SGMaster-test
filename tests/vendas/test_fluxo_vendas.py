@@ -1,5 +1,6 @@
 import os
 import json
+import pdb
 import time
 import random
 import webbrowser
@@ -15,6 +16,8 @@ from selenium.common.exceptions import TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
 from utils.dashboard import atualizar_dashboard_html
 from utils.login import login
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 
 # ==============================================================
 # 🔧 FIXTURE DO DRIVER
@@ -75,16 +78,17 @@ def inserir_codigos_e_finalizar(driver, quantidade=5):
             etapas_local.append(f"⚠️ Erro ao inserir código: {e}")
 
     try:
+
         btn_finalizar = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(),'Finalizar')]]")))
         btn_finalizar.click()
         etapas_local.append("✅ Botão 'Finalizar' clicado com sucesso")
-
         os.makedirs(os.path.join("screenshots"), exist_ok=True)
         screenshot_final = os.path.join("screenshots", f"fluxo_vendas_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.png")
         driver.save_screenshot(screenshot_final)
         etapas_local.append(f"📸 Screenshot salva em {screenshot_final}")
 
-        driver.refresh()
+        ActionChains(driver).send_keys(Keys.F5).perform()
+        
         etapas_local.append("🔄 Tela atualizada")
 
     except Exception as e:
