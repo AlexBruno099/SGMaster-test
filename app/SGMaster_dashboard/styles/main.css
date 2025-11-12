@@ -1,106 +1,120 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ============================= */
+/*   ESTILOS GERAIS              */
+/* ============================= */
 
-body {
-  display: flex;
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+body { 
+  font-family: 'Poppins', sans-serif; 
   background: #F5F7FB;
-  color: #1E1E2D;
 }
 
-.sidebar {
-  width: 280px;
-  background: linear-gradient(180deg, #004AAD, #007BFF);
-  color: white;
+.dark body {
+  background: #0f172a;
+}
+
+/* ============================= */
+/*   CANVAS GLOBAL               */
+/* ============================= */
+canvas {
+  width: 100% !important;
+  height: auto !important; /* corrigido de 100% para auto */
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* ============================= */
+/*   GRÁFICO DE STATUS (semicírculo) */
+/* ============================= */
+#statusChart {
+  width: 100% !important;
+  max-width: 400px;
+  height: 260px !important;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+/* Evita que o card force o gráfico a expandir verticalmente */
+.card .chart-container {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  height: 200px;
+  padding-bottom: 10px;
 }
 
-.sidebar h1 {
-  font-size: 1.4rem;
-  text-align: center;
-  margin-bottom: 25px;
+/* ============================= */
+/*   MODAL                      */
+/* ============================= */
+.modal-content canvas {
+  max-width: 100%;
+  height: auto !important;
 }
 
-.sidebar ul {
-  flex: 1;
-  list-style: none;
-  overflow-y: auto;
+/* ============================= */
+/*   CARDS                      */
+/* ============================= */
+.card { 
+  background: white; 
+  border-radius: 1rem; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+  padding: 1.5rem; 
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.sidebar li {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: 0.2s;
+.dark .card {
+  background: #1e293b;
 }
 
-.sidebar li:hover {
-  background: rgba(255, 255, 255, 0.25);
+.card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1); 
 }
 
-.sidebar footer {
-  font-size: 0.8rem;
-  text-align: center;
-  opacity: 0.8;
+/* ============================= */
+/*   STATUS BADGES              */
+/* ============================= */
+.status-success { 
+  background: #22c55e; 
+  color: white; 
+  padding: 0.25rem 0.7rem; 
+  border-radius: 6px; 
+  font-weight: 600; 
 }
 
-main {
-  flex: 1;
-  padding: 30px;
-  overflow-y: auto;
+.status-fail { 
+  background: #ef4444; 
+  color: white; 
+  padding: 0.25rem 0.7rem; 
+  border-radius: 6px; 
+  font-weight: 600; 
 }
 
-.dashboard h2, .details h2 {
-  font-weight: 600;
-  margin-bottom: 15px;
+/* ============================= */
+/*   CAIXA DE ANÁLISE IA        */
+/* ============================= */
+.ia-box { 
+  background: #eaf3ff; 
+  border-left: 4px solid #2563eb; 
+  padding: 0.8rem; 
+  border-radius: 8px; 
+  margin-top: 10px; 
 }
 
-.stats {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
+.dark .ia-box { 
+  background: #1e3a8a33; 
+  border-color: #3b82f6; 
 }
 
-.stat-card {
-  flex: 1;
-  text-align: center;
-  padding: 15px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.stat-card.success h3 { color: #28C76F; }
-.stat-card.fail h3 { color: #EA5455; }
-.stat-card.warning h3 { color: #FF9F43; }
-.stat-card.total h3 { color: #007BFF; }
-
-.chart-container {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  margin-bottom: 25px;
-}
-
-.details #testDetails {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-pre {
-  background: #F2F3F5;
-  padding: 10px;
-  border-radius: 8px;
-  white-space: pre-wrap;
+/* ============================= */
+/*   IMAGENS                    */
+/* ============================= */
+img { 
+  border-radius: 10px; 
+  margin-top: 10px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); 
+  max-width: 100%;
+  height: auto;
 }

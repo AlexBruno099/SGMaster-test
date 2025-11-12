@@ -26,9 +26,3 @@ def atualizar_dashboard_html(dados_teste):
         json.dump(historico, f, indent=4, ensure_ascii=False)
 
     print(f"✅ JSON atualizado com {len(historico)} registros → {JSON_PATH}")
-
-    if os.path.exists(HTML_PATH):
-        print("📊 Abrindo dashboard via Live Server...")
-        webbrowser.open("http://127.0.0.1:5500/app/SGMaster_dashboard/index.html")
-    else:
-        print(f"⚠️ Dashboard não encontrado em {HTML_PATH}")
